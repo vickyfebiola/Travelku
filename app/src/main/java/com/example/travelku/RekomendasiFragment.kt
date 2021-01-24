@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide
 import com.example.travelku.adapter.RekomendasiAdapter
 import com.example.travelku.model.Rekomendasi
 import com.example.travelku.model.Spot
+import com.google.android.gms.maps.model.LatLng
 import kotlinx.android.synthetic.main.fragment_rekomendasi.*
 
 class RekomendasiFragment : Fragment() {
@@ -50,13 +51,14 @@ class RekomendasiFragment : Fragment() {
         val data = ArrayList<Spot>()
         for (number in 1..i) {
             val item = Spot(
-                "Waterboom Duar",
+                "Owabong Waterpark",
                 "https://travelspromo.com/wp-content/uploads/2018/11/Fun-Park-Water-Boom.jpg",
                 "Wahana Air, Keluarga",
                 "Lorem ipsum sit amet, los dol dang",
                 4.5,
                 "09.00 - 17.00",
-                "Rp15.000,- / Orang"
+                "Rp15.000,- / Orang",
+                LatLng(-7.348492356670486, 109.34972487122866)
             )
             data.add(item)
         }

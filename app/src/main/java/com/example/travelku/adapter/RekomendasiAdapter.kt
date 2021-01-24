@@ -34,7 +34,7 @@ class RekomendasiAdapter(private val context: Context, private val data: ArrayLi
         fun onBind(rekomendasi: Rekomendasi) {
             titleRekomendasi.text = rekomendasi.title
             rvSpot.layoutManager = LinearLayoutManager(context)
-            rvSpot.adapter = SpotAdapter(context, rekomendasi.dataSpot)
+            rvSpot.adapter = SpotAdapter(context, rekomendasi.dataSpot){}
         }
     }
 }
